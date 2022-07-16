@@ -1,5 +1,11 @@
-*::after::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
+}
+
+li {
+  list-style: none;
 }
 
 .container {
