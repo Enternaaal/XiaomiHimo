@@ -35,6 +35,8 @@ body {
   margin: 0;
 }
 
+/* header */
+
 .header__inner {
   display: flex;
   justify-content: space-between;
@@ -63,4 +65,123 @@ body {
   background: #131313;
   color: #fff;
   transition: all 0.3s;
+}
+
+/* bike */
+
+.bike {
+  padding: 100px 0 150px;
+}
+
+.bike__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bike__column-slider {
+  flex-basis: 630px;
+  margin-left: 30px;
+  min-width: 630px;
+}
+
+.bike__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 77px;
+  margin: 60px 0 5px;
+}
+
+.bike__sub {
+  margin: 0 0 60px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39px;
+  color: #6f6f6f;
+}
+
+.bike__text {
+  max-width: 420px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.bike__link {
+  display: inline-block;
+  margin-top: 80px;
+  background-color: #131313;
+  padding: 28px 81px 28px 81px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 1.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.bike__link:hover {
+  background: #ff4040;
+  transition: all 0.3s;
+}
+
+/* bike-slider */
+
+.bike-slider .slick-dots {
+  right: 0;
+  top: 50px;
+}
+
+.slick-dots {
+  position: absolute;
+}
+
+.slick-dots li + li {
+  padding-top: 10px;
+}
+
+.slick-dots button {
+  font-size: 0;
+  padding: 0;
+  border: none;
+  background-color: #131313;
+  width: 2px;
+  height: 25px;
+  border-radius: 7px;
+}
+
+.slick-dots button:hover,
+.slick-active button {
+  background-color: #ff4040;
+  transition: all 0.3s;
+}
+
+.bike-list {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.bike-list__item {
+  min-width: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 58px;
+}
+
+.bike-list__num {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #131313;
+}
+
+.bike-list__text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #131313;
+  margin: auto 0;
 }
