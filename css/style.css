@@ -23,6 +23,14 @@ a {
   color: inherit;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
 .container {
   max-width: 1220px;
   padding: 0 10px;
@@ -304,3 +312,140 @@ body {
 .slider__item {
   padding-left: 50px;
 }
+
+/* order */
+
+.order {
+  margin-bottom: 100px;
+}
+
+.form {
+  max-width: 420px;
+}
+
+.form__title {
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+
+.form__descr {
+  max-width: 300px;
+  margin-bottom: 30px;
+}
+
+.form__input-name,
+.form__input-phone {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #131313;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.order__inner {
+  position: relative;
+}
+
+.form__input-name::placeholder,
+.form__input-phone::placeholder,
+.form__text {
+  color: #6f6f6f;
+  opacity: 0.5;
+}
+
+.form__text {
+  margin-bottom: 10px;
+}
+
+.form__label-box {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.form__bike {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.form__radio-style {
+  display: inline-block;
+  background: #000;
+  width: 80px;
+  height: 12px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.form__radio-style--gray {
+  background: #6f6f6f;
+}
+
+.form__radio-style--white {
+  background: #ffffff;
+  border: 1px solid #6f6f6f;
+}
+
+.form__radio-style--red {
+  background: #ff4040;
+}
+
+.form__label + .form__label {
+  margin-left: 23px;
+}
+
+.order__btn {
+  background: #131313;
+  border: 1px solid #131313;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 1.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 28px 81px 28px 81px;
+  cursor: pointer;
+}
+
+.order__btn:hover {
+  background: #ff4040;
+  transition: all 0.3s;
+}
+
+.form__radio:checked + .form__bike {
+  display: block;
+}
+
+.form__bike-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 100px;
+  font-size: 32px;
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  right: 0;
+  border: 1px solid #ff4040;
+  border-radius: 50%;
+  transform: translateX(-50%);
+}
+
+.form__bike-price:after {
+  content: "";
+  width: 220px;
+  height: 100px;
+  border: 1px solid #ff4040;
+  border-radius: 50%;
+  position: absolute;
+  top: 12px;
+  left: 0;
+}
+
+/* footer */
