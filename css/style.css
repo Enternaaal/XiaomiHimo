@@ -14,6 +14,10 @@ li {
   padding-left: 0;
 }
 
+p {
+  margin: 0;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -225,3 +229,65 @@ body {
 .advantages__descr + .advantages__descr {
   margin-bottom: 50px;
 }
+
+/* stats */
+
+.stats {
+  margin-bottom: 150px;
+}
+
+.stats__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stats__column:nth-child(1) {
+  margin-right: 60px;
+  flex-basis: 570px;
+}
+
+.stats__title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.stats__line {
+  display: flex;
+  padding-top: 5px;
+}
+
+.stats__list + .stats__list {
+  padding-top: 30px;
+}
+
+.stats__text {
+  margin: 0;
+  display: inline-block;
+  padding: 2px 0 3px;
+  min-width: 570px;
+  min-height: 22px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #131313;
+}
+
+.stats__name {
+  padding-right: 25px;
+  flex-basis: 285px;
+}
+
+.stats__descr {
+  flex-basis: 285px;
+}
+
+.stats__column:nth-child(2) {
+  align-self: center;
+}
+
+/* slider */
