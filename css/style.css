@@ -500,7 +500,46 @@ body {
 @media (max-width:991px){ 
     .menu{
         margin-right: 0px;
-        padding: 0px;
+        
     }
 
+}
+
+@media (max-width:640px){ 
+    .menu{
+        margin-top: 50px;
+    }
+    .header__inner { 
+        display:block;
+        text-align: center;
+    }
+    .menu__list{ 
+        justify-content: space-evenly;
+    }
+    .menu__item+.menu__item{ 
+        padding-left: 0;
+    }
+    .menu__link {
+        padding: 25px 20px;
+    }
+
+}
+
+@media (max-width: 460px) {
+    .menu__list{ 
+        justify-content: space-between;
+    }
+    .menu__link {
+        padding: 25px 0;
+    }
+}
+
+@media (max-width: 350px) {
+    .menu__link {
+        font-size: 12px;
+        padding: 25px 0;
+    }
+    .menu {
+        margin-top: 30px;
+    }
 }
