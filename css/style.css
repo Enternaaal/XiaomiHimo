@@ -500,6 +500,7 @@ body {
 @media (max-width:991px){ 
     .menu{
         margin-right: 0px;
+        padding: 0px;
     }
 
 }
